@@ -35,7 +35,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        working-directory: ./simple-springboot-app
+        
       - name: Run tests
         run: mvn test
         # working-directory: ./simple-springboot-app
@@ -48,4 +48,4 @@ jobs:
         uses: actions/upload-artifact@v4.6.1
         with:
           name: springboot-app
-          path: ./simple-springboot-app/target/*.jar
+          path: target/*.jar
