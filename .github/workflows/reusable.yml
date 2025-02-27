@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4.2.2
       - name: Print ENVNAME
-        run: echo "The value of ENVNAME is ${{ env.ENVNAME }}"
+        run: echo "The value of ENVNAME is ${{ secrets.ENVNAME }}"
         
       - name: Set up JDK
         uses: actions/setup-java@v4
