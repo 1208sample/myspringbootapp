@@ -7,7 +7,7 @@ on:
         description: 'The greeting message'
         required: true
         type: string
-
+      
 jobs:
   reusable_job:
     runs-on: ubuntu-latest
