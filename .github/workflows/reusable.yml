@@ -9,7 +9,6 @@ on:
         type: string
 env:
   ENVNAME: dev    
-
 jobs:
   reusable_job:
     runs-on: ubuntu-latest
@@ -35,14 +34,12 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        
+
       - name: Run tests
         run: mvn test
-        # working-directory: ./simple-springboot-app
 
       - name: Package application
         run: mvn package -Dmaven.test.skip=true
-        # working-directory: ./simple-springboot-app
 
       - name: Archive JAR file
         uses: actions/upload-artifact@v4.6.1
