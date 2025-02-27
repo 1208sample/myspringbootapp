@@ -10,3 +10,10 @@ public class StudentApplication {
 		SpringApplication.run(StudentApplication.class, args);
 	}
 }
+
+// @SpringBootApplication
+// public class SimpleSpringBootAppApplication {
+//     public static void main(String[] args) {
+//         SpringApplication.run(SimpleSpringBootAppApplication.class, args);
+//     }
+// }
